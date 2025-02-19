@@ -5,7 +5,7 @@ import { TypingEffect } from "../components/TypingEffect";
 
 const Hero = () => {
   return (
-    <section className="p-6 md:p-10 md:h-96 flex flex-col items-center justify-center">
+    <section className="py-10 md:h-96 flex flex-col items-center justify-center">
       <div className="md:space-y-4">
         <TypingEffect text="Hi, I'm Karan Dayani." type="head" speed={0.05} />
         <div className="hidden md:block">
@@ -29,7 +29,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: 0.5,
-          delay: Math.max(2, "Hi, I'm Karan Dayani.".length * 0.1),
+          delay: 1,
         }}
       >
         <button className="btn btn-primary">Contact</button>

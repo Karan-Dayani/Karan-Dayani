@@ -14,15 +14,7 @@ export const Ticker = () => {
   return (
     <div className=" bg-white">
       <div>
-        <motion.div
-          className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.5,
-            delay: Math.max(2, "Hi, I'm Karan Dayani.".length * 0.1),
-          }}
-        >
+        <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
           <motion.div
             className="flex gap-14 flex-none pr-14 items-center"
             animate={{
@@ -53,7 +45,7 @@ export const Ticker = () => {
             <Image src={Express} alt="Express" className="h-8 w-auto" />
             <Image src={MongoDB} alt="MongoDB" className="h-10 w-auto" />
           </motion.div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
