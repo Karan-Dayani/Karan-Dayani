@@ -32,16 +32,16 @@ const Header = () => {
           )}
         </AnimatePresence>
         <nav className="gap-6 text-slate-400 hidden md:flex">
-          <a className="hover:text-black cursor-pointer transition-all duration-300">
+          <a className="hover:text-foreground cursor-pointer transition-all duration-300">
             Home
           </a>
-          <a className="hover:text-black cursor-pointer transition-all duration-300">
+          <a className="hover:text-foreground cursor-pointer transition-all duration-300">
             About
           </a>
-          <a className="hover:text-black cursor-pointer transition-all duration-300">
+          <a className="hover:text-foreground cursor-pointer transition-all duration-300">
             Work
           </a>
-          <a className="hover:text-black cursor-pointer transition-all duration-300">
+          <a className="hover:text-foreground cursor-pointer transition-all duration-300">
             Contact
           </a>
         </nav>
