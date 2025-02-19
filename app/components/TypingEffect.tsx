@@ -19,8 +19,8 @@ export function TypingEffect({
       ref={ref}
       className={
         type === "head"
-          ? `text-2xl text-center sm:text-4xl font-bold tracking-tighter md:text-5xl md:leading-[3.5rem] lg:text-6xl lg:leading-[4rem]`
-          : `text-base text-center sm:text-lg font-medium tracking-tight md:text-xl md:leading-[2rem] lg:text-2xl lg:leading-[2.5rem]`
+          ? `text-[8vw] sm:text-5xl md:text-6xl lg:text-7xl text-center font-bold tracking-tighter md:leading-[3.5rem] lg:leading-[4rem]`
+          : `text-[5vw] sm:text-xl md:text-2xl lg:text-3xl text-center font-medium tracking-tight leading-[1.5] sm:leading-[1.6] md:leading-[2rem] lg:leading-[2.5rem]`
       }
     >
       {text.split("").map((letter, index) => (

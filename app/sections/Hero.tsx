@@ -5,8 +5,8 @@ import { TypingEffect } from "../components/TypingEffect";
 
 const Hero = () => {
   return (
-    <section className="p-10 md:h-96 flex flex-col items-center justify-center">
-      <div>
+    <section className="p-6 md:p-10 md:h-96 flex flex-col items-center justify-center">
+      <div className="md:space-y-4">
         <TypingEffect text="Hi, I'm Karan Dayani." type="head" speed={0.05} />
         <div className="hidden md:block">
           <TypingEffect
@@ -32,8 +32,8 @@ const Hero = () => {
           delay: Math.max(2, "Hi, I'm Karan Dayani.".length * 0.1),
         }}
       >
-        <button className="btn btn-primary text-xs md:text-sm">Contact</button>
-        <button className="btn btn-text text-xs md:text-sm">
+        <button className="btn btn-primary">Contact</button>
+        <button className="btn btn-text">
           <span>About me</span>
           <IoIosArrowRoundForward className=" size-5 md:size-6 pt-0.5" />
         </button>
