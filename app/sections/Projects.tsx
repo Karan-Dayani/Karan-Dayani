@@ -2,8 +2,25 @@ import { motion } from "motion/react";
 import ProjectCard from "../components/ProjectCard";
 import Cravish from "@/public/projects/cravish.png";
 import BingeIt from "@/public/projects/Binge-it.png";
+import BookShelf from "@/public/projects/BookShelf.png";
 
 const projects = [
+  {
+    title: "BookShelf",
+    description:
+      "An online library management system where users can issue books with the permision of the admin, there is a fine system for delayed return. (In Progress)",
+    tech: [
+      "Next.js",
+      "Tailwind",
+      "PostgreSql",
+      "Next Auth",
+      "Node.js",
+      "Express.js",
+    ],
+    image: BookShelf.src,
+    live: "https://your-book-shelf.vercel.app/",
+    github: "https://github.com/Karan-Dayani/BookShelf",
+  },
   {
     title: "Cravish",
     description:

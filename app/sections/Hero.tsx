@@ -5,7 +5,7 @@ import { TypingEffect } from "../components/TypingEffect";
 
 const Hero = () => {
   return (
-    <section className="py-10 md:h-96 flex flex-col items-center justify-center">
+    <section className="md:h-96 flex flex-col items-center justify-center">
       <div className="md:space-y-4">
         <TypingEffect text="Hi, I'm Karan Dayani." type="head" speed={0.05} />
         <div className="hidden md:block">

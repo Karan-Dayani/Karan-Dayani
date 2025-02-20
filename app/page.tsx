@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import Hero from "./sections/Hero";
 import { Ticker } from "./sections/Ticker";
 import Projects from "./sections/Projects";
+import Services from "./sections/Services";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       >
         <Ticker />
         <Projects />
+        <Services />
       </motion.div>
     </>
   );
