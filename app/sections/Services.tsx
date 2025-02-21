@@ -41,6 +41,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.2 }}
+            viewport={{ once: true }}
           >
             {service.icon}
             <h3 className="mt-4 text-xl font-semibold text-white">
@@ -56,10 +57,11 @@ export default function Services() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.6 }}
+        viewport={{ once: true }}
       >
         <a
           href="#"
-          className="inline-block mt-5 px-6 py-3 border border-foreground text-foreground rounded-lg hover:bg-foreground hover:text-white transition-all"
+          className="inline-block mt-5 px-6 py-3 border border-foreground text-foreground rounded-lg hover:bg-foreground hover:text-background transition-all"
         >
           Let&apos;s Work Together
         </a>

@@ -2,6 +2,7 @@ import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { motion } from "motion/react";
 import { TypingEffect } from "../components/TypingEffect";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -33,10 +34,10 @@ const Hero = () => {
         }}
       >
         <button className="btn btn-primary">Contact</button>
-        <button className="btn btn-text">
+        <Link href="/about" className="btn btn-text">
           <span>About me</span>
           <IoIosArrowRoundForward className=" size-5 md:size-6 pt-0.5" />
-        </button>
+        </Link>
       </motion.div>
     </section>
   );

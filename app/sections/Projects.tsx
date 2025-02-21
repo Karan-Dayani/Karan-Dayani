@@ -50,7 +50,7 @@ export default function Projects() {
       <motion.h2
         className="text-[8vw] sm:text-5xl md:text-6xl text-center font-bold tracking-tighter"
         initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
         My Work
@@ -69,6 +69,7 @@ export default function Projects() {
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
+        viewport={{ once: true }}
       >
         <Link href="/projects" className="btn btn-primary px-6 py-3 text-lg">
           View More
