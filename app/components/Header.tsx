@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { IoMenu } from "react-icons/io5";
+import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,27 +24,39 @@ const Header = () => {
               className="absolute top-10 right-6 w-36 max-h-48 rounded-md bg-[#F5F5F5] p-6 z-10 flex flex-col origin-top-right"
             >
               <nav className="flex flex-col text-black gap-2">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Work</a>
-                <a href="#">Contact</a>
+                <Link href="/">Home</Link>
+                <Link href="/about">About</Link>
+                <Link href="/projects">Projects</Link>
+                <Link href="/contact">Contact</Link>
               </nav>
             </motion.div>
           )}
         </AnimatePresence>
         <nav className="gap-6 text-slate-400 hidden md:flex">
-          <a className="hover:text-foreground cursor-pointer transition-all duration-300">
+          <Link
+            href="/"
+            className="hover:text-foreground cursor-pointer transition-all duration-300"
+          >
             Home
-          </a>
-          <a className="hover:text-foreground cursor-pointer transition-all duration-300">
+          </Link>
+          <Link
+            href="/about"
+            className="hover:text-foreground cursor-pointer transition-all duration-300"
+          >
             About
-          </a>
-          <a className="hover:text-foreground cursor-pointer transition-all duration-300">
-            Work
-          </a>
-          <a className="hover:text-foreground cursor-pointer transition-all duration-300">
+          </Link>
+          <Link
+            href="/projects"
+            className="hover:text-foreground cursor-pointer transition-all duration-300"
+          >
+            Projects
+          </Link>
+          <Link
+            href="/contact"
+            className="hover:text-foreground cursor-pointer transition-all duration-300"
+          >
             Contact
-          </a>
+          </Link>
         </nav>
       </div>
     </div>

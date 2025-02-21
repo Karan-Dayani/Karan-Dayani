@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useSpring, useTransform } from "motion/react";
+import { usePathname } from "next/navigation";
 
 const SmoothScroll = ({ children }: { children: React.ReactNode }) => {
   const contentRef = useRef<HTMLDivElement>(null);
@@ -10,6 +11,7 @@ const SmoothScroll = ({ children }: { children: React.ReactNode }) => {
   const y = useTransform(smoothProgress, (value) => {
     return value * -(contentHeight - window.innerHeight);
   });
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,7 +26,7 @@ const SmoothScroll = ({ children }: { children: React.ReactNode }) => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [contentRef]);
+  }, [contentRef, pathname]);
 
   return (
     <>

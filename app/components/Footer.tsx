@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
@@ -16,24 +17,24 @@ export default function Footer() {
         <nav className="mt-5 md:mt-0">
           <ul className="flex flex-wrap gap-5 text-gray-300 text-sm">
             <li>
-              <a href="#" className="hover:text-white transition">
+              <Link href="/" className="hover:text-white transition">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
+              <Link href="/about" className="hover:text-white transition">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
+              <Link href="/projects" className="hover:text-white transition">
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
+              <Link href="/contact" className="hover:text-white transition">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

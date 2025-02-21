@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "motion/react";
 
 interface Project {
@@ -9,13 +10,23 @@ interface Project {
   github: string;
 }
 
-export default function ProjectCard({ project }: { project: Project }) {
+export default function ProjectCard({
+  project,
+  effect,
+}: {
+  project: Project;
+  effect: boolean;
+}) {
   return (
     <motion.div
       className="group relative overflow-hidden rounded-xl border border-white/20 bg-black p-6 transition-all duration-300 hover:scale-[1.02] hover:border-white/40 shadow-lg"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4 }}
+      {...(effect
+        ? {
+            initial: { opacity: 0, y: 20 },
+            whileInView: { opacity: 1, y: 0 },
+            transition: { duration: 0.4 },
+          }
+        : {})}
     >
       {/* Project Image */}
       <div className="relative w-full h-56 overflow-hidden rounded-lg">
@@ -45,20 +56,24 @@ export default function ProjectCard({ project }: { project: Project }) {
 
         {/* Buttons */}
         <div className="mt-5 flex gap-4">
-          <a
-            href={project.live}
-            target="_blank"
-            className="text-xs sm:text-sm px-5 py-2 rounded-lg border border-white text-white hover:bg-white hover:text-black transition-all"
-          >
-            Live Demo
-          </a>
-          <a
-            href={project.github}
-            target="_blank"
-            className="text-xs sm:text-sm px-5 py-2 rounded-lg border border-white text-white hover:bg-white hover:text-black transition-all"
-          >
-            GitHub
-          </a>
+          {project.live !== "#" && (
+            <a
+              href={project.live}
+              target="_blank"
+              className="text-xs sm:text-sm px-5 py-2 rounded-lg border border-white text-white hover:bg-white hover:text-black transition-all"
+            >
+              Live Demo
+            </a>
+          )}
+          {project.github !== "#" && (
+            <a
+              href={project.github}
+              target="_blank"
+              className="text-xs sm:text-sm px-5 py-2 rounded-lg border border-white text-white hover:bg-white hover:text-black transition-all"
+            >
+              GitHub
+            </a>
+          )}
         </div>
       </div>
     </motion.div>

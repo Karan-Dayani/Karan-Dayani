@@ -1,9 +1,12 @@
-import { motion } from "motion/react";
+import React from "react";
 import ProjectCard from "../components/ProjectCard";
+
 import Cravish from "@/public/projects/cravish.png";
 import BingeIt from "@/public/projects/Binge-it.png";
 import BookShelf from "@/public/projects/BookShelf.png";
-import Link from "next/link";
+import ShoeRack from "@/public/projects/ShoeRack.png";
+import SD from "@/public/projects/SD.png";
+import BODZ from "@/public/projects/BODZ.png";
 
 const projects = [
   {
@@ -32,6 +35,32 @@ const projects = [
     github: "https://github.com/Karan-Dayani/Cravish",
   },
   {
+    title: "Soneraj Distributor",
+    description:
+      "A website for a liquor distribution company to manage their products, orders, stock and customers. (made for a client, not live)",
+    tech: ["Next.js", "Tailwind", "MongoDB", "PWA"],
+    image: SD.src,
+    live: "#",
+    github: "#",
+  },
+  {
+    title: "BODZ",
+    description:
+      "An affiliate website where users can find the best deals on Amazon products. (worked with the client's team on this project)",
+    tech: [
+      "React",
+      "Vite",
+      "CSS",
+      "Node.js",
+      "Express.js",
+      "Axios",
+      "Amazon AAPI",
+    ],
+    image: BODZ.src,
+    live: "https://best-online-dealz.vercel.app/",
+    github: "https://github.com/arush789/Best-Online-Dealz",
+  },
+  {
     title: "Binge It",
     description:
       "An entertainment platform where users can find new movies and can create there own custom watch lists.",
@@ -40,40 +69,26 @@ const projects = [
     live: "https://binge-it-mu.vercel.app/",
     github: "https://github.com/Karan-Dayani/BingeIt",
   },
+  {
+    title: "ShoeRack",
+    description: "A Simple UI design for a shoe or an e-commerce website.",
+    tech: ["React", "Vite", "CSS"],
+    image: ShoeRack.src,
+    live: "https://monumental-otter-4cd82d.netlify.app/",
+    github: "https://github.com/Karan-Dayani/ShoeRack",
+  },
 ];
 
-export default function Projects() {
-  console.log(ProjectCard);
+const Projects = () => {
   return (
-    <section className="py-16 px-6 sm:px-10 lg:px-20">
-      {/* Section Title */}
-      <motion.h2
-        className="text-[8vw] sm:text-5xl md:text-6xl text-center font-bold tracking-tighter"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        My Work
-      </motion.h2>
-
-      {/* Project Grid */}
+    <div className="p-10">
       <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
-          <ProjectCard project={project} effect={true} key={index} />
+          <ProjectCard project={project} effect={false} key={index} />
         ))}
       </div>
-
-      {/* View More Button */}
-      <motion.div
-        className="flex justify-center mt-12"
-        initial={{ opacity: 0, y: 10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-      >
-        <Link href="/projects" className="btn btn-primary px-6 py-3 text-lg">
-          View More
-        </Link>
-      </motion.div>
-    </section>
+    </div>
   );
-}
+};
+
+export default Projects;
