@@ -6,15 +6,22 @@ const ThemeToggle = () => {
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
   useEffect(() => {
-    // Check if the user has a saved theme preference
-    const storedTheme = localStorage.getItem("theme");
+    // Ensure this runs only in the browser
+    if (typeof window !== "undefined") {
+      const storedTheme = localStorage.getItem("theme");
+      const systemPrefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
 
-    if (storedTheme) {
-      setTheme(storedTheme as "light" | "dark");
-      document.documentElement.setAttribute("data-theme", storedTheme);
-    } else {
-      // Default to light mode if no preference is found
-      document.documentElement.setAttribute("data-theme", "light");
+      if (storedTheme) {
+        setTheme(storedTheme as "light" | "dark");
+        document.documentElement.setAttribute("data-theme", storedTheme);
+      } else {
+        // Default to light mode but fallback to system preference
+        const defaultTheme = systemPrefersDark ? "dark" : "light";
+        setTheme(defaultTheme);
+        document.documentElement.setAttribute("data-theme", defaultTheme);
+      }
     }
   }, []);
 
