@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import ProjectCard from "../components/ProjectCard";
 import Cravish from "@/public/projects/cravish.png";
 import BingeIt from "@/public/projects/Binge-it.png";
-import BookShelf from "@/public/projects/BookShelf.png";
+import BookShelf from "@/public/projects/bookshelf.png";
 import Link from "next/link";
 
 const projects = [

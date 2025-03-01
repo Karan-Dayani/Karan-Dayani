@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "motion/react";
 import { Ticker } from "../sections/Ticker";
 import ProjectCard from "../components/ProjectCard";
-import SD from "@/public/projects/SD.png";
+import SD from "@/public/projects/sd.png";
 import BODZ from "@/public/projects/BODZ.png";
 
 const timelineData = [
