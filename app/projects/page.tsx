@@ -3,9 +3,9 @@ import ProjectCard from "../components/ProjectCard";
 
 import Cravish from "@/public/projects/cravish.png";
 import BingeIt from "@/public/projects/Binge-it.png";
-import BookShelf from "@/public/projects/BookShelf.png";
+import BookShelf from "@/public/projects/bookshelf.png";
 import ShoeRack from "@/public/projects/ShoeRack.png";
-import SD from "@/public/projects/SD.png";
+import SD from "@/public/projects/sd.png";
 import BODZ from "@/public/projects/BODZ.png";
 
 const projects = [
