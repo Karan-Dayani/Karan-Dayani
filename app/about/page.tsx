@@ -145,13 +145,13 @@ const About = () => {
           <div className="mt-6 flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="/contact"
-              className="px-6 py-3 rounded-lg text-white bg-black hover:bg-gray-900 transition-all text-lg font-medium shadow-lg"
+              className="px-6 py-3 rounded-lg text-foreground bg-background hover:bg-gray-900 transition-all text-lg font-medium shadow-lg"
             >
               Get in Touch
             </a>
             <a
               href="/projects"
-              className="px-6 py-3 rounded-lg text-foreground bg-gray-100 hover:bg-gray-200 transition-all text-lg font-medium shadow-lg"
+              className="px-6 py-3 rounded-lg text-background bg-foreground hover:bg-gray-200 transition-all text-lg font-medium shadow-lg"
             >
               View My Work
             </a>

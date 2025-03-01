@@ -33,7 +33,9 @@ const Hero = () => {
           delay: 1,
         }}
       >
-        <button className="btn btn-primary">Contact</button>
+        <Link href="/contact" className="btn btn-primary">
+          Contact
+        </Link>
         <Link href="/about" className="btn btn-text">
           <span>About me</span>
           <IoIosArrowRoundForward className=" size-5 md:size-6 pt-0.5" />

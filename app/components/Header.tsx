@@ -24,10 +24,24 @@ const Header = () => {
               className="absolute top-10 right-6 w-36 max-h-48 rounded-md bg-[#F5F5F5] p-6 z-10 flex flex-col origin-top-right"
             >
               <nav className="flex flex-col text-black gap-2">
-                <Link href="/">Home</Link>
-                <Link href="/about">About</Link>
-                <Link href="/projects">Projects</Link>
-                <Link href="/contact">Contact</Link>
+                <Link href="/" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                  Home
+                </Link>
+                <Link href="/about" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                  About
+                </Link>
+                <Link
+                  href="/projects"
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                >
+                  Projects
+                </Link>
+                <Link
+                  href="/contact"
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                >
+                  Contact
+                </Link>
               </nav>
             </motion.div>
           )}

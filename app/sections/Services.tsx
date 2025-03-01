@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import Link from "next/link";
 import { FaCode, FaRocket, FaPaintBrush } from "react-icons/fa";
 
 const services = [
@@ -59,12 +60,12 @@ export default function Services() {
         transition={{ duration: 0.4, delay: 0.6 }}
         viewport={{ once: true }}
       >
-        <a
-          href="#"
+        <Link
+          href="/contact"
           className="inline-block mt-5 px-6 py-3 border border-foreground text-foreground rounded-lg hover:bg-foreground hover:text-background transition-all"
         >
           Let&apos;s Work Together
-        </a>
+        </Link>
       </motion.div>
     </section>
   );
