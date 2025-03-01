@@ -18,7 +18,9 @@ export default function Home() {
           delay: 1,
         }}
       >
-        <Ticker />
+        <div className="mt-10 md:mt-0">
+          <Ticker />
+        </div>
         <Projects />
         <Services />
       </motion.div>
