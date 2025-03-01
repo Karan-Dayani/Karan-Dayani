@@ -5,6 +5,8 @@
 
 - 🌱 I’m currently learning **Framer-motion, Backend, mySql, Data Optimization, Postgresql, etc.**
 
+- 👨‍💻 All of my projects are available at [https://karan-dayani.vercel.app/](https://karan-dayani.vercel.app/)
+
 - 💬 Ask me about **Next.js, typescript, node.js, tailwindcss, mongoDB, postgresql**
 
 - 📫 How to reach me **karandayani39@gmail.com**
