@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Karan Dayani</h1>
 <h3 align="center">A full-stack developer(student) from India</h3>
 
-- 🔭 I’m currently working on [BookShelf](https://github.com/Karan-Dayani/BookShelf)
+- 🔭 I’m currently working on [Binge It](https://github.com/Karan-Dayani/binge-it-2.0)
 
 - 🌱 I’m currently learning **Framer-motion, Backend, mySql, Data Optimization, Postgresql, etc.**
 
