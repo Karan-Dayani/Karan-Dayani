@@ -1,0 +1,31 @@
+export const techStack1 = [
+    { name: "React", slug: "react", color: "hover:border-sky-400 hover:shadow-[0_0_15px_rgba(56,189,248,0.15)] dark:hover:shadow-[0_0_15px_rgba(56,189,248,0.08)]" },
+    { name: "Next.js", slug: "nextdotjs", color: "hover:border-neutral-400 dark:hover:border-neutral-500 hover:shadow-[0_0_15px_rgba(120,120,120,0.15)] dark:hover:shadow-[0_0_15px_rgba(120,120,120,0.08)]", iconClass: "dark:invert" },
+    { name: "TypeScript", slug: "typescript", color: "hover:border-blue-500 hover:shadow-[0_0_15px_rgba(59,130,246,0.15)] dark:hover:shadow-[0_0_15px_rgba(59,130,246,0.08)]" },
+    { name: "Tailwind CSS", slug: "tailwindcss", color: "hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(6,182,212,0.15)] dark:hover:shadow-[0_0_15px_rgba(6,182,212,0.08)]" },
+    { name: "Node.js", slug: "nodedotjs", color: "hover:border-green-500 hover:shadow-[0_0_15px_rgba(34,197,94,0.15)] dark:hover:shadow-[0_0_15px_rgba(34,197,94,0.08)]" },
+    { name: "PostgreSQL", slug: "postgresql", color: "hover:border-blue-600 hover:shadow-[0_0_15px_rgba(37,99,235,0.15)] dark:hover:shadow-[0_0_15px_rgba(37,99,235,0.08)]" },
+    { name: "MongoDB", slug: "mongodb", color: "hover:border-green-600 hover:shadow-[0_0_15px_rgba(4,201,72,0.15)] dark:hover:shadow-[0_0_15px_rgba(4,201,72,0.08)]" },
+    { name: "React", slug: "react", color: "hover:border-sky-400 hover:shadow-[0_0_15px_rgba(56,189,248,0.15)] dark:hover:shadow-[0_0_15px_rgba(56,189,248,0.08)]" },
+    { name: "Next.js", slug: "nextdotjs", color: "hover:border-neutral-400 dark:hover:border-neutral-500 hover:shadow-[0_0_15px_rgba(120,120,120,0.15)] dark:hover:shadow-[0_0_15px_rgba(120,120,120,0.08)]", iconClass: "dark:invert" },
+    { name: "TypeScript", slug: "typescript", color: "hover:border-blue-500 hover:shadow-[0_0_15px_rgba(59,130,246,0.15)] dark:hover:shadow-[0_0_15px_rgba(59,130,246,0.08)]" },
+    { name: "Tailwind CSS", slug: "tailwindcss", color: "hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(6,182,212,0.15)] dark:hover:shadow-[0_0_15px_rgba(6,182,212,0.08)]" },
+    { name: "Node.js", slug: "nodedotjs", color: "hover:border-green-500 hover:shadow-[0_0_15px_rgba(34,197,94,0.15)] dark:hover:shadow-[0_0_15px_rgba(34,197,94,0.08)]" },
+    { name: "PostgreSQL", slug: "postgresql", color: "hover:border-blue-600 hover:shadow-[0_0_15px_rgba(37,99,235,0.15)] dark:hover:shadow-[0_0_15px_rgba(37,99,235,0.08)]" },
+    { name: "MongoDB", slug: "mongodb", color: "hover:border-green-600 hover:shadow-[0_0_15px_rgba(4,201,72,0.15)] dark:hover:shadow-[0_0_15px_rgba(4,201,72,0.08)]" },
+];
+
+export const techStack2 = [
+    { name: "Python", slug: "python", color: "hover:border-yellow-500 hover:shadow-[0_0_15px_rgba(234,179,8,0.15)] dark:hover:shadow-[0_0_15px_rgba(234,179,8,0.08)]" },
+    { name: "Git", slug: "git", color: "hover:border-orange-500 hover:shadow-[0_0_15px_rgba(249,115,22,0.15)] dark:hover:shadow-[0_0_15px_rgba(249,115,22,0.08)]" },
+    { name: "Supabase", slug: "supabase", color: "hover:border-green-500 hover:shadow-[0_0_15px_rgba(4,201,72,0.15)] dark:hover:shadow-[0_0_15px_rgba(4,201,72,0.08)]" },
+    { name: "Firebase", slug: "firebase", color: "hover:border-red-500 hover:shadow-[0_0_15px_rgba(239,68,68,0.15)] dark:hover:shadow-[0_0_15px_rgba(239,68,68,0.08)]" },
+    { name: "Prisma", slug: "prisma", color: "hover:border-slate-500 hover:shadow-[0_0_15px_rgba(100,116,139,0.15)] dark:hover:shadow-[0_0_15px_rgba(100,116,139,0.08)]", iconClass: "dark:invert" },
+    { name: "Figma", slug: "figma", color: "hover:border-purple-500 hover:shadow-[0_0_15px_rgba(168,85,247,0.15)] dark:hover:shadow-[0_0_15px_rgba(168,85,247,0.08)]" },
+    { name: "Python", slug: "python", color: "hover:border-yellow-500 hover:shadow-[0_0_15px_rgba(234,179,8,0.15)] dark:hover:shadow-[0_0_15px_rgba(234,179,8,0.08)]" },
+    { name: "Git", slug: "git", color: "hover:border-orange-500 hover:shadow-[0_0_15px_rgba(249,115,22,0.15)] dark:hover:shadow-[0_0_15px_rgba(249,115,22,0.08)]" },
+    { name: "Supabase", slug: "supabase", color: "hover:border-green-500 hover:shadow-[0_0_15px_rgba(4,201,72,0.15)] dark:hover:shadow-[0_0_15px_rgba(4,201,72,0.08)]" },
+    { name: "Firebase", slug: "firebase", color: "hover:border-red-500 hover:shadow-[0_0_15px_rgba(239,68,68,0.15)] dark:hover:shadow-[0_0_15px_rgba(239,68,68,0.08)]" },
+    { name: "Prisma", slug: "prisma", color: "hover:border-slate-500 hover:shadow-[0_0_15px_rgba(100,116,139,0.15)] dark:hover:shadow-[0_0_15px_rgba(100,116,139,0.08)]", iconClass: "dark:invert" },
+    { name: "Figma", slug: "figma", color: "hover:border-purple-500 hover:shadow-[0_0_15px_rgba(168,85,247,0.15)] dark:hover:shadow-[0_0_15px_rgba(168,85,247,0.08)]" },
+];
