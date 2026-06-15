@@ -1,9 +1,9 @@
-export default function ProjectCard({ 
-    project, 
-    className = "w-[85vw] md:w-[45vw] lg:w-[38vw] xl:w-[32vw] flex-shrink-0" 
-}: { 
-    project: any; 
-    className?: string; 
+export default function ProjectCard({
+    project,
+    className = "w-[85vw] md:w-[45vw] lg:w-[38vw] xl:w-[32vw] flex-shrink-0"
+}: {
+    project: any;
+    className?: string;
 }) {
     return <div
         className={`h-[580px] rounded-3xl border border-neutral-200/50 dark:border-neutral-800/30 overflow-hidden bg-white dark:bg-neutral-950 flex flex-col justify-between group shadow-sm hover:shadow-xl hover:border-neutral-300 dark:hover:border-neutral-700 transition-all duration-300 relative ${className}`}
@@ -49,9 +49,21 @@ export default function ProjectCard({
                 <h3 className="text-xl md:text-2xl font-bold text-neutral-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
                     {project.title}
                 </h3>
-                <p className="text-sm md:text-base text-neutral-500 dark:text-neutral-400 line-clamp-4 leading-relaxed">
+                <p className="text-sm md:text-base text-neutral-500 dark:text-neutral-400 line-clamp-3 leading-relaxed">
                     {project.desc}
                 </p>
+                {project.stack && project.stack.length > 0 && (
+                    <div className="flex flex-wrap gap-1.5 pt-1">
+                        {project.stack.map((tech: string) => (
+                            <span
+                                key={tech}
+                                className="text-[12px] font-bold px-2.5 py-1 rounded-md bg-neutral-100/80 dark:bg-neutral-900/60 text-neutral-600 dark:text-neutral-400 border border-neutral-200/50 dark:border-neutral-800/40 backdrop-blur-sm select-none hover:bg-neutral-200/60 dark:hover:bg-neutral-800/90 hover:text-neutral-900 dark:hover:text-neutral-200 transition-colors duration-200"
+                            >
+                                {tech}
+                            </span>
+                        ))}
+                    </div>
+                )}
             </div>
 
             {/* 3. Action Buttons */}
@@ -60,7 +72,7 @@ export default function ProjectCard({
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center space-x-2 bg-neutral-950 hover:bg-neutral-800 dark:bg-white dark:hover:bg-neutral-100 text-white dark:text-black px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-200 shadow-sm cursor-pointer"
+                    className="flex-1 inline-flex items-center justify-center space-x-2 bg-neutral-950 hover:bg-neutral-800 dark:bg-white dark:hover:bg-neutral-100 text-white dark:text-black px-4 py-3 rounded-xl text-md font-semibold transition-all duration-200 shadow-sm cursor-pointer"
                 >
                     <span>Live Demo</span>
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
@@ -71,7 +83,7 @@ export default function ProjectCard({
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center space-x-2 bg-neutral-50 hover:bg-neutral-100 dark:bg-neutral-900 dark:hover:bg-neutral-800 text-neutral-900 dark:text-neutral-100 border border-neutral-200/50 dark:border-neutral-800/30 px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-200 cursor-pointer"
+                    className="flex-1 inline-flex items-center justify-center space-x-2 bg-neutral-50 hover:bg-neutral-100 dark:bg-neutral-900 dark:hover:bg-neutral-800 text-neutral-900 dark:text-neutral-100 border border-neutral-200/50 dark:border-neutral-800/30 px-4 py-3 rounded-xl text-md font-semibold transition-all duration-200 cursor-pointer"
                 >
                     <span>GitHub</span>
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
